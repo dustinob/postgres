@@ -26,10 +26,7 @@ client.connect((err) => {
     console.log("Found " + results.length + " person(s) by the name " + myArgs + ":");
 
 
-    console.log(results[0].id + ": " + results[0].first_name + " " + results[0].last_name + ", born " + results[0].birthdate.toString().slice(0, 10));
+    console.log(results[0].id + ": " + results[0].first_name + " " + results[0].last_name + ", born " + results[0].birthdate.toString().slice(0, 15));
     client.end();
   });
 });
-
-
- // $1::text AS first_name", [myArgs]
